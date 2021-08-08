@@ -1,0 +1,126 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'ALK Sanet';
+    src: url('../Fonts/alk-sanet-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../Fonts/alk-sanet-webfont.svg') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Fonts/alk-sanet-webfont.ttf') format('woff2'), /* Super Modern Browsers */
+         url('../Fonts/alk-sanet-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Fonts/alk-sanet-webfont.woff2') format('truetype')/* Safari, Android, iOS */
+    
+}
+@font-face {
+    font-family: 'BPG Nino Mtavruli Bold';
+    src: url('../Fonts/bpg-nino-mtavruli-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../Fonts/bpg-nino-mtavruli-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Fonts/bpg-nino-mtavruli-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../Fonts/bpg-nino-mtavruli-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Fonts/bpg-nino-mtavruli-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../Fonts/bpg-nino-mtavruli-bold-webfont.svg#bpg_nino_mtavrulibold') format('svg'); /* Legacy iOS */
+}
+.none{
+    display: none;
+}
+body{
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 100vh;
+    background: rgb(18,14,97);
+    background: linear-gradient(90deg, rgba(18,14,97,1) 0%, rgba(166,13,116,1) 30%, rgb(116, 78, 176) 90%);
+}
+.anano-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.anano-h3{
+    font-family: 'ALK Sanet';
+    font-size: 50px;
+    color: aquamarine;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.anano-h3:hover{
+    color: rgb(214, 226, 43);
+}
+.anano-text{
+    max-width: 800px;
+    width: 100%;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 100px;
+    padding: 50px 50px;
+    border-radius: 30px;
+}
+.anano-p{
+    font-family: "BPG Nino Mtavruli Bold";
+    color: rgb(212, 179, 179);
+    line-height: 40px;
+}
+@media(max-width: 750px){
+     .anano-h3{
+         font-size: 30px;
+     }
+}
+@media(max-width: 590px){
+    .anano-text{
+        padding: 10px 10px;
+    }
+    .anano-h3{
+        font-size: 20px;
+    }
+}
+@media(max-width: 370px){
+    .anano-h3{
+        font-size: 10px;
+    }
+}
